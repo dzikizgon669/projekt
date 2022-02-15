@@ -4,9 +4,6 @@
 
 using namespace std;
 
-
-
-
 int zgadnij (int podana)
 {
 
@@ -14,7 +11,7 @@ int proby =2;
 
 int probyy =6;
 
-    int liczba, X=1, Y=20;
+    int liczba, X=1, Y=30;
     srand(time(NULL));
     liczba=X + rand()%(Y-X+1);
 
@@ -35,7 +32,9 @@ int probyy =6;
             }
     }
 
-    for (int i = 1; i <= probyy; i++){
+    for (int i = 1; i <= probyy; i++)
+    
+    {
 
         if(liczba<podana){
 
@@ -59,33 +58,20 @@ int probyy =6;
                 break;
             }
 
-
-
-
-
         }
 
     }
 
-
-
-
-
-
-
+///// zmieniłam odstępy miedzy kodami zeby ładnniej wyglądało
 
 int main()
 {
     int podana;
 
-    cout <<"Musisz odgadnac liczbe calkowita z przedzialu od 1 do 20. Wybierz liczbe: "<<endl;
+    cout <<"Musisz odgadnac liczbe calkowita z przedzialu od 1 do 30. Wybierz liczbe: "<<endl;
     cin >>podana;
 
-
-
     cout <<zgadnij (podana)<<endl;
-
-
 
 
 }
